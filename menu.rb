@@ -20,4 +20,12 @@ class Menu
       puts "#{pizza.number}: #{pizza.name} -> #{pizza.ingredients} -> €#{pizza.price}"
     end
   end
+
+  def pick_pizza
+    puts "which one do you want?"
+    number = gets.chomp.to_i
+
+    @pizzas.find { |pizza|
+    number == number}
+  end
 end
