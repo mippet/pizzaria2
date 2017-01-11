@@ -1,3 +1,7 @@
+require_relative "menu.rb"
+
+menu = Menu.new
+
 done = false
 
 puts "hello hello, welcome! pizzaaa"
@@ -13,6 +17,7 @@ while not done
   case choice
     when 1
       puts "here you've the menu"
+      menu.print_details
     when 2
       done = true
     else
@@ -29,4 +34,4 @@ while not done
     puts "||   (_)   __..-'"
     puts " \\__..--\"\""
   end
-end       
+end
